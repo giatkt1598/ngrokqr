@@ -1,0 +1,40 @@
+{
+  "name": "ngrokqr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "reinstall": "del yarn.lock && npm uninstall -g ngrokqr && yarn && yarn build && npm install -g ."
+  },
+  "bin": {
+    "ngrokqr": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/ejs": "^2.6.0",
+    "@types/inquirer": "^0.0.43",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^10.9.4",
+    "@types/qrcode-terminal": "^0.12.0",
+    "@types/shelljs": "^0.8.0",
+    "@types/yargs": "^11.1.1",
+    "shx": "^0.3.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^2.6.1",
+    "inquirer": "^6.2.0",
+    "lodash": "^4.17.21",
+    "ngrok": "^4.3.3",
+    "qrcode-terminal": "^0.12.0",
+    "shelljs": "^0.8.2",
+    "yargs": "^12.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
